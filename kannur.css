@@ -1,0 +1,256 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+}
+
+
+/* $green:#219150;
+$black:#10221b;
+$white:#fff;
+$light-bg:#eee;
+$border:.2rem solid $black;
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.1); */
+
+
+
+@mixin grid($val)
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+
+    &::-webkit-scrollbar{
+        width:1rem;
+    }
+}
+
+
+    &::-webkit-scrollbar-track{
+        background: white;
+    }
+
+
+    &::-webkit-scrollbar-thumb{
+      background: black;
+    }
+
+    section{
+        padding: 5rem 9%;
+    }
+
+    .btn{
+        margin-top: 1rem;
+display: inline-flex;
+        border: 2px solid white;
+        border-radius: 2rem;
+        color: white;
+        cursor: pointer;
+        background: none;
+        font-size: 1.7rem;
+        padding: 1rem 5rem;
+        margin-left: 15px;
+       
+
+    }
+
+    .btn:hover{
+        background: yellow;
+        color: black;
+    }
+
+
+    .header{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 1em 9%;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        /* top: 10px; */
+        background: rgba(0, 0, 0, 1);
+    }
+
+    .logo{
+        margin-right: auto;
+        font-size: 4rem;
+        color: yellow;
+        font-weight: bolder;
+
+    i{
+color: green;
+    }
+}
+
+
+.navbar a{
+    margin: 3.5px;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    color: white;
+    
+
+    
+}
+
+.navbar a:hover{
+    
+    background-color: yellow;
+    color: black;
+    transition: 0.1s ease;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+
+
+.icons div{
+    font-size: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#search-btn:hover{
+    color: yellow;
+    transition: 0.1s ease;
+}
+
+
+
+
+
+
+
+/* footer */
+  
+
+.footer{
+    
+    padding: 3rem;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+.icon{
+    color: white;
+    margin-left: 15px;
+
+}
+
+.fa-brands{
+    margin-left: 5px;
+    font-size: 25px;
+    
+}
+
+.para{
+    color: #49497e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-section{
+    background: url(/images/kannur\ dist.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 90px;
+    
+
+}
+
+.inner-container{
+    width: 50%;
+    float: right;
+    background-color: deepskyblue;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
