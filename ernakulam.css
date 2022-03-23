@@ -163,7 +163,7 @@ color: green;
 
 
 .about-section{
-    background: url(/images/ernakulam\ dist.webp) no-repeat left;
+    background: url(./images/ernakulam\ dist.webp) no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
